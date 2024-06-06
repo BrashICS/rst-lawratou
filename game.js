@@ -1,6 +1,7 @@
-setInterval(timer, 2000);
+'use strict';
 
-function timer(){
-let seconds = 0
+document.getElementById("cardB").addEventListener("click", flip)
+
+function flip(){
 
 }
