@@ -4,7 +4,7 @@
 <head>
   <title>Memory Card Game</title>
   <link rel = "stylesheet" href="../css/intro_page.css">
-  <script src="game.js" defer></script>
+  <script src="../game.js" defer></script>
 </head>
 
 
@@ -16,122 +16,66 @@
 
 
 
-  <div class="stats">
-    <div id ="countdown()">5</div>
-  </div>
+<!--Timer -->
 
 <div class = "timer_box"> Timer
-  <div id = "num">00:00</div>
+  <div class = "timer" id="time_div"></div>
 
 </div>
+
+
+<!-- moves -->
 
 <div class="move_box"> Moves
   <div id ="numb"> 0 </div>
 
 </div>
 
-<!--   first colunm  -->
-
-<div class = "card">
-  <div class="Card1_front" id = "card_one">
-    <img src="../images/emoji_with_sg.png" style="width: 40px; float:inline-end; position: absolute; top:30%; left:32%;">
-  </div>
-  <div  class ="card_back"  id = "cardB" style="position: relative;  left: 37px; top: -40.99px;">
-
+<!--   grid -->
+<div  class = wrapper>
+  <div id = "card1">
+<img src="../images/queen_of_diamonds2.png" class="card" >
   </div>
 
 
+  <div id = "card2"><img src="../images/6_of_hearts.png" class="card">
+    <div  id = "back"><img src="../images/card_back_red.png"  class="card2"> </div>
+
+  </div>
+
+
+
+  <div id = "card3"><img src="../images/king_of_diamonds2.png" class="card"></div>
+  <div id = "card4"><img src="../images/6_of_hearts.png" class="card"></div>
+  <div id = "card5"><img src="../images/red_joker.png" class="card"></div>
+  <div id = "card6"><img src="../images/king_of_diamonds2.png" class="card"></div>
+  <div id = "card7"><img src="../images/red_joker.png" class="card"></div>
+  <div id = "card8"><img src="../images/8_of_clubs.png" class="card"></div>
+  <div id = "card9"><img src="../images/8_of_clubs.png" class="card"></div>
+  <div id = "card10"><img src="../images/queen_of_hearts.png" class="card"></div>
+  <div id = "card11"><img src="../images/queen_of_diamonds2.png" class="card"></div>
+  <div id = "card12"><img src="../images/7_of_diamonds.png" class="card"></div>
+  <div id = "card13"><img src="../images/2_of_clubs.png" class="card"></div>
+  <div id = "card14"><img src="../images/queen_of_hearts.png" class="card"></div>
+  <div id = "card15"><img src="../images/2_of_clubs.png" class="card"></div>
+  <div id = "card16"><img src="../images/7_of_diamonds.png" class="card"></div>
 </div>
 
 
-<div class = "card">
-  <div class="Card2_front">
-    <img src="../images/evil_emoji.png" style="width: 45px; float:inline-end; position: absolute; top:51%; left: 31.7%;">
-  </div>
-</div>
-
-<div class = "card">
-  <div class="Card3_front">
-    <img src="../images/laugh_emoji.png" style="width: 42px; float:inline-end; position: absolute; top:72%;left: 32%;">
-  </div>
-</div>
-
-<div class = "card"><div class="Card4_front">
-  <img src="../images/love_emoji.png" style="width: 45px; float:inline-end; position: absolute; top:93%;left: 31.8%;">
-</div></div>
-
-<!--  second colunm  -->
-
-<div class = "card" style="float: right; margin-right:55%; margin-top: -34.8%;">
-  <div class="Card5_front">
-    <img src="../images/heart_emoji.png" style="width: 45px; float:inline-end; position: absolute;top:30%; left:40.5%; ">
-  </div>
-</div>
-<div class = "card" style="float: right; margin-right:55%; margin-top: -25.3%;">
-  <div class="Card6_front">
-    <img src="../images/explo_emoji.png" style="width: 50px; float:inline-end; position: absolute;top:52%; left:40.5%;  ">
-  </div>
-</div>
-<div class = "card" style="float: right; margin-right:55%; margin-top: -16.10%;">
-  <div class="Card7_front">
-    <img src="../images/explo_emoji.png" style="width: 50px; float:inline-end; position: absolute;top:72%; left: 40.5%;  ">
-  </div>
-</div>
-<div class = "card" style="float: right; margin-right:55%; margin-top: -6.60%;">
-  <div class="Card8_front">
-    <img src="../images/laugh_emoji.png" style="width: 44px; float:inline-end; position: absolute; top:93.8%; left:40.4%; ">
-  </div></div>
-
-<!--  Third colunm  -->
-
-<div class = "card" style="float: right; margin-right:46.2%; margin-top: -34.91%;">
-  <div class="Card9_front">
-    <img src="../images/red_heart.png" style="width: 49px; float:inline-end; position: absolute;top:31%; left:49.1%; ">
-  </div>
-</div>
-<div class = "card" style="float: right; margin-right:46.2%; margin-top: -25.3%;">
-  <div class="Card10_front">
-    <img src="../images/red_heart.png" style="width: 50px; float:inline-end; position: absolute;  top:52%; left: 49%;">
-  </div></div>
-<div class = "card" style="float: right; margin-right: 46.2%; margin-top: -16.10%;">
-  <div class="Card11_front">
-    <img src="../images/star_emoji.png" style="width: 50px; float:inline-end; position: absolute; top:72%; left: 49%; ">
-  </div></div>
-<div class = "card" style="float: right; margin-right:46.2%; margin-top: -6.60%;">
-  <div class="Card12_front">
-  <img src="../images/heart_emoji.png" style="width: 44px; float:inline-end; position: absolute;top:94%; left: 49%;">
-</div></div>
-
-<!--   Forth colunm  -->
 
 
-<div class = "card" style="float: right; margin-right:37.5%; margin-top: -34.91%;">
-  <div class="Card13_front">
-    <img src="../images/evil_emoji.png" style="width: 44px; float:inline-end; position: absolute; top:31%; left:57.8%; ">
-  </div>
-</div>
-<div class = "card" style="float: right; margin-right:37.5%; margin-top: -25.3%;">
-  <div class="Card14_front">
-    <img src="../images/love_emoji.png" style="width: 47px; float:inline-end; position: absolute; top:52%; left:57.5%; ">
-  </div>
-</div>
-<div class = "card" style="float: right; margin-right:37.5%;  margin-top: -16.10%;">
-  <div class="Card15_front">
-    <img src="../images/star_emoji.png" style="width: 50px; float:inline-end; position: absolute; top:73%; left: 57.6%; ">
-  </div>
-</div>
-<div class = "card" style="float: right; margin-right:37.5%; margin-top: -6.70%;">
-  <div class="Card16_front">
-    <img src="../images/emoji_with_sg.png" style="width: 44px; float:inline-end; position: absolute; top:95%; left: 57.6%; ">
-  </div>
-</div>
+
+
+
+
+
+
 
 
 
 <div  class="button2">
-  <a href="../pages/memory_game.html">
-    <button>Restart</button>
-    </a>
+    <button onclick="window.location.reload();">Restart</button>
+
   </div>
 
 
