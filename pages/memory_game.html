@@ -8,75 +8,100 @@
 </head>
 
 
-
 <body>
 
 
-  <h1 style="font-size: 30pt ;margin-right: 9%;margin-bottom: 6%;">Memory Game</h1>
+  <h1 style="font-size: 30pt ;margin-right: 9%;margin-bottom: 3%;">Memory Game</h1>
 
-
-
+<div class = stats>
 <!--Timer -->
-
 <div class = "timer_box"> Timer
   <div class = "timer" id="time_div"></div>
-
 </div>
-
-
 <!-- moves -->
-
 <div class="move_box"> Moves
   <div id ="numb"> 0 </div>
 
 </div>
-
-<!--   grid -->
-<div  class = wrapper>
-  <div id = "card1">
-<img src="../images/queen_of_diamonds2.png" class="card" >
-  </div>
-
-
-  <div id = "card2"><img src="../images/6_of_hearts.png" class="card">
-    <div  id = "back"><img src="../images/card_back_red.png"  class="card2"> </div>
-
-  </div>
-
-
-
-  <div id = "card3"><img src="../images/king_of_diamonds2.png" class="card"></div>
-  <div id = "card4"><img src="../images/6_of_hearts.png" class="card"></div>
-  <div id = "card5"><img src="../images/red_joker.png" class="card"></div>
-  <div id = "card6"><img src="../images/king_of_diamonds2.png" class="card"></div>
-  <div id = "card7"><img src="../images/red_joker.png" class="card"></div>
-  <div id = "card8"><img src="../images/8_of_clubs.png" class="card"></div>
-  <div id = "card9"><img src="../images/8_of_clubs.png" class="card"></div>
-  <div id = "card10"><img src="../images/queen_of_hearts.png" class="card"></div>
-  <div id = "card11"><img src="../images/queen_of_diamonds2.png" class="card"></div>
-  <div id = "card12"><img src="../images/7_of_diamonds.png" class="card"></div>
-  <div id = "card13"><img src="../images/2_of_clubs.png" class="card"></div>
-  <div id = "card14"><img src="../images/queen_of_hearts.png" class="card"></div>
-  <div id = "card15"><img src="../images/2_of_clubs.png" class="card"></div>
-  <div id = "card16"><img src="../images/7_of_diamonds.png" class="card"></div>
 </div>
 
 
 
 
+<!--   grid -->
+<div class = "wrapper" >
 
+<div class="board" onclick="flipCard(this)" >
+<img class = "front" src="../images/2_of_clubs.png">
+<img  class="back"  src="../images/card_back_red.png">
+</div>
 
-
-
-
-
-
-
-
-<div  class="button2">
-    <button onclick="window.location.reload();">Restart</button>
-
+<div class="board" onclick="flipCard(this)" >
+  <img class = "front" src="../images/6_of_hearts.png">
+  <img  class="back"  src="../images/card_back_red.png">
   </div>
+
+
+  <div class="board" onclick="flipCard(this)" >
+    <img class = "front" src="../images/2_of_clubs.png">
+    <img  class="back"  src="../images/card_back_red.png">
+    </div>
+    <div class="board" onclick="flipCard(this)" >
+      <img class = "front" src="../images/7_of_diamonds.png">
+      <img  class="back"  src="../images/card_back_red.png">
+      </div>
+
+    <div class="board" onclick="flipCard(this)" >
+        <img class = "front" src="../images/8_of_clubs.png">
+        <img  class="back"  src="../images/card_back_red.png">
+        </div>
+
+   <div class="board" onclick="flipCard(this)" >
+          <img class = "front" src="../images/8_of_clubs.png">
+          <img  class="back"  src="../images/card_back_red.png">
+          </div>
+   <div class="board" onclick="flipCard(this)" >
+            <img class = "front" src="../images/red_joker.png">
+            <img  class="back"  src="../images/card_back_red.png">
+    </div><div class="board" onclick="flipCard(this)" >
+              <img class = "front" src="../images/7_of_diamonds.png">
+              <img  class="back"  src="../images/card_back_red.png">
+       </div><div class="board" onclick="flipCard(this)" >
+                <img class = "front" src="../images/queen_of_diamonds2.png">
+                <img  class="back"  src="../images/card_back_red.png">
+      </div><div class="board" onclick="flipCard(this)" >
+                  <img class = "front" src="../images/red_joker.png">
+                  <img  class="back"  src="../images/card_back_red.png">
+    </div><div class="board" onclick="flipCard(this)" >
+                    <img class = "front" src="../images/queen_of_hearts.png">
+                    <img  class="back"  src="../images/card_back_red.png">
+      </div><div class="board" onclick="flipCard(this)" >
+                      <img class = "front" src="../images/queen_of_hearts.png">
+                      <img  class="back"  src="../images/card_back_red.png">
+              </div><div class="board" onclick="flipCard(this)" >
+                        <img class = "front" src="../images/queen_of_diamonds2.png">
+                        <img  class="back"  src="../images/card_back_red.png">
+                </div><div class="board" onclick="flipCard(this)" >
+                          <img class = "front" src="../images/6_of_hearts.png">
+                          <img  class="back"  src="../images/card_back_red.png">
+                  </div><div class="board" onclick="flipCard(this)" >
+                            <img class = "front" src="../images/king_of_diamonds2.png">
+                            <img  class="back"  src="../images/card_back_red.png">
+                       </div><div class="board" onclick="flipCard(this)" >
+                              <img class = "front" src="../images/king_of_diamonds2.png">
+                              <img  class="back"  src="../images/card_back_red.png">
+                              </div>
+
+                            </div>
+
+
+
+
+<a href="../pages/memory_game.html">
+  <button class ="reset_game" class = hide>Restart game </button>
+ </a>
+
+
 
 
 

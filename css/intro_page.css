@@ -45,11 +45,6 @@ p{
 
 }
 
-.button2{
-  margin-top: 3%;
-  margin-left:42%;
-}
-
 
 div button{
 color: white;
@@ -62,43 +57,40 @@ background-color: rgb(154, 84, 220);
 }
 
 
-
-
  img {
   width: 480px;
-
  }
 
 
 *{
   box-sizing: border-box;
-
 }
 
-.wrapper{
+.stats{
   display: grid;
-  grid-template-columns: 100px 100px 100px 100px;
+  grid-template-columns: 100px
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
   grid-gap: 10px;
-
+  margin-left: 350px;
 }
 
-.card {
-width: 80px;
-margin-left: 210px;
-}
 
-.card2 {
-  width: 80px;
-  margin-left: 210px;
-  float: inline-end;
-  }
+.board {
+  position: relative;
+  width: 100px;
+  height: 150px;
+  perspective: 1000px;
+  cursor: pointer;
+}
 
 
 .timer_box{
  width: 60px;
   background-color: #f1f1f1;
-  float: left;
-  border-radius: 10px;
   text-align: center;
 
 }
@@ -107,9 +99,54 @@ margin-left: 210px;
 
   width: 60px;
   background-color: #f1f1f1;
-  float: left;
-  border-radius: 10px;
   text-align: center;
-  margin-left: 3%;
+}
 
+
+.front, .back {
+
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  backface-visibility: hidden;
+  transition: transform 0.8s;
+  
+}
+
+
+
+.back {
+  transform: rotateY(0deg);
+}
+
+
+.front {
+  transform: rotateY(180deg);
+}
+
+
+.flipped .back {
+  transform: rotateY(180deg);
+}
+
+
+.flipped .front {
+  transform: rotateY(0deg);
+}
+
+
+.back img, .front img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+}
+
+.reset_game{
+  margin-left: 40%;
+  size: 60px;
+  background-color: rgb(203, 120, 203);
+  font-size: large;
+  font-family:  Georgia, 'Times New Roman', Times, serif,;
+  border: none;
+  border-radius: 3px;
 }
